@@ -1,0 +1,19 @@
+:root {
+  --primary-color: #3f95ea;
+  --secondary-color: #52d3aa;
+  --danger-color: #ff3c32;
+  --cta-color: #fba905;
+  --dark-color: #343434;
+  --dark-color-two: #666666;
+  --background-color: #222222;
+  --text-color: #eeeeee;
+}
+
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$danger-color: var(--danger-color);
+$cta-color: var(--cta-color);
+$background-color: var(--background-color);
+$dark-color: var(--dark-color);
+$dark-color-two: var(--dark-color-two);
+$text-color: var(--text-color);
