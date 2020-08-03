@@ -1,7 +1,8 @@
 # webpack-project
+
 Proyecto vacío preparado para trabajar con webpack.
 
-Con las configuraciones y estrctura de archivos listas para trabajar con:
+Con las configuraciones y estructura de archivos listas para trabajar con:
 
 PUG
 

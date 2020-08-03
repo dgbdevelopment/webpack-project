@@ -12,7 +12,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "./src/template.pug",
+      template: "./src/views/pages/index.pug",
     }),
     new MiniCssExtractPlugin({
       filename: "css/styles.css?" + new Date().getTime(),
@@ -32,8 +32,13 @@ module.exports = {
         test: /\.(sa|sc|c)ss$/i,
         use: [
           // Creates `style` nodes from JS strings
-          MiniCssExtractPlugin.loader,
-          // Translates CSS into CommonJS
+          {
+            loader: MiniCssExtractPlugin.loader,
+            //para que no haya problemas con background: url()
+            options: {
+              publicPath: "../",
+            },
+          }, // Translates CSS into CommonJS
           "css-loader",
           // Compiles Sass to CSS
           "sass-loader",
